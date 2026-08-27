@@ -207,13 +207,13 @@ main {
 .booking-form {
     background-color: white;
 
-    width: 400px;
-    max-width: 90%;
+    width: calc(100% - 30px);
+    max-width: 400px;
 
-    padding: 30px;
+    padding: 25px 20px;
 
     border-radius: 10px;
-
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -221,7 +221,9 @@ main {
 /* Form heading */
 .booking-form h2 {
     text-align: center;
+
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 
@@ -235,7 +237,7 @@ main {
 
 /* Input boxes */
 #booking-form input {
-    padding: 12px;
+    padding: 14px;
 
     border: 1px solid #ccc;
 
@@ -244,13 +246,24 @@ main {
     font-size: 15px;
 }
 
+/* DATE AND TIME */
+#booking-form input[type="date"],
+#booking-form input[type="time"] {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+
 
 /* Close X */
 .close-button {
     position: absolute;
 
-    top: 10px;
-    right: 20px;
+    top: 8px;
+    right: 15px;
 
     font-size: 30px;
 
@@ -275,6 +288,7 @@ main {
     padding: 12px;
 
     cursor: pointer;
+    font-size: 16px;
 
     border-radius: 5px;
 }
