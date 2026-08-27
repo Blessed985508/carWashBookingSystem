@@ -105,7 +105,7 @@ main {
 
 /* ================= HERO ================= */
 
-.hero {
+/*.hero {
     background-image: url('images/blackGuyWashing.jpg');
 
     background-size: cover;
@@ -121,6 +121,66 @@ main {
     align-items: center;
     justify-content: center;
 }
+*/
+
+.hero {
+    height: 700px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* VIDEO */
+
+.hero-video {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* DARK OVERLAY */
+
+.hero-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    z-index: 1;
+}
+
+
+/* TEXT */
+
+.hero h1,
+.hero p {
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+}
+
 
 .hero h1 {
     color: rgb(57, 57, 218);
@@ -215,6 +275,7 @@ main {
     border-radius: 10px;
 
     position: relative;
+    box-sizing: border-box;
 }
 
 
@@ -230,18 +291,39 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
 /* Input boxes */
 #booking-form input {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    
     padding: 12px;
-
+    
     border: 1px solid #ccc;
-
+    
     border-radius: 5px;
-
+    
     font-size: 15px;
+    
+    box-sizing: border-box;
+}
+/* Just added now */
+/* Date and time */
+#booking-form input[type="date"],
+#booking-form input[type="time"] {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    display: block;
+
+    box-sizing: border-box;
 }
 
 
@@ -732,6 +814,7 @@ main {
         max-width: 400px;
         padding: 25px 20px;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     .booking-form h2 {
@@ -740,12 +823,17 @@ main {
 
 
     /* INPUTS */
+    #booking-form {
+        width: 100%;
+        min-width: 0;
+    }
     #booking-form input {
         width: 100%;
         max-width: 100%;
         padding: 14px;
         font-size: 16px;
         box-sizing: border-box;
+        min-width: 0;
     }
 
     /*DATE AND TIME INPUT - MOBILE ONLY*/
@@ -756,6 +844,9 @@ main {
         min-width: 0;
         box-sizing: border-box;
         display: block;
+        padding: 12px;
+        font-size: 16px;
+        box-sizing: border-box;
     }
 
 
@@ -763,6 +854,7 @@ main {
     #booking-form input[type="submit"] {
         padding: 14px;
         font-size: 16px;
+        width: 100%;
     }
 
 
