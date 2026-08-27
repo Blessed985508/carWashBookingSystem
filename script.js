@@ -19,7 +19,6 @@ function closeBookingForm() {
     modal.style.display = "none";
 }
 
-
 // Get customer's current location
 function getCurrentLocation() {
 
@@ -32,26 +31,64 @@ function getCurrentLocation() {
 
         navigator.geolocation.getCurrentPosition(
 
-            function (position) {
+            async function (position) {
 
                 const latitude = position.coords.latitude;
                 const longitude = position.coords.longitude;
 
-                // Put coordinates into location field
-                locationInput.value =
-                    latitude + ", " + longitude;
+                try {
 
-                // Create Google Maps link
-                const mapsLink =
-                    "https://www.google.com/maps?q="
-                    + latitude + ","
-                    + longitude;
+                    // Convert coordinates into an actual address
+                    const response = await fetch(
+                        "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat="
+                        + latitude
+                        + "&lon="
+                        + longitude
+                    );
 
-                // Store Google Maps link
-                locationInput.dataset.mapsLink = mapsLink;
+                    if (!response.ok) {
+                        throw new Error("Address lookup failed");
+                    }
 
-                locationStatus.textContent =
-                    "✓ Current location detected";
+                    const data = await response.json();
+
+                    // Put actual address into location field
+                    if (data.display_name) {
+
+                        locationInput.value = data.display_name;
+
+                        locationStatus.textContent =
+                            "✓ Current location detected";
+
+                    } else {
+
+                        locationInput.value =
+                            latitude + ", " + longitude;
+
+                        locationStatus.textContent =
+                            "✓ Location detected, but address could not be found.";
+                    }
+
+                    // Create Google Maps link
+                    const mapsLink =
+                        "https://www.google.com/maps?q="
+                        + latitude + ","
+                        + longitude;
+
+                    // Store Google Maps link
+                    locationInput.dataset.mapsLink = mapsLink;
+
+                } catch (error) {
+
+                    console.error(error);
+
+                    // If address lookup fails, keep coordinates as backup
+                    locationInput.value =
+                        latitude + ", " + longitude;
+
+                    locationStatus.textContent =
+                        "✓ Location detected, but address could not be found.";
+                }
 
             },
 
@@ -70,6 +107,7 @@ function getCurrentLocation() {
 
     }
 }
+
 
 
 // Send booking to WhatsApp
