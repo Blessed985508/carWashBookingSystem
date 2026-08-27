@@ -199,10 +199,10 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     overflow-y: auto;
-    padding: 15px 0;
+    padding: 20px 15px;
 }
 
 
@@ -210,14 +210,15 @@ main {
 .booking-form {
     background-color: white;
 
-    width: 400px;
-    max-width: 90%;
+    width: 100%;
+    max-width: 420px;
 
-    padding: 30px;
+    padding: 30px 22px;
 
     border-radius: 10px;
-
+    margin: 20px auto;
     position: relative;
+    box-sizing: border-box;
 }
 
 
@@ -232,7 +233,7 @@ main {
 #booking-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0;
 }
 
 
@@ -243,8 +244,14 @@ main {
     border: 1px solid #ccc;
 
     border-radius: 5px;
-
-    font-size: 15px;
+    width: 100%;
+    font-size: 16px !important;
+    box-sizing: border-box;
+}
+#location-status {
+    font-size: 12px;
+    margin-bottom: 5px;
+    min-height: 16px;
 }
 
 
