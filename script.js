@@ -140,3 +140,47 @@ function sendToWhatsApp(event) {
 
     window.open(whatsappURL, "_blank");
 }
+
+
+// ================= MOBILE MENU =================
+
+function toggleMenu() {
+
+    const navbar = document.getElementById("navbar");
+    const menuButton = document.querySelector(".menu-button i");
+
+    navbar.classList.toggle("active");
+
+    if (navbar.classList.contains("active")) {
+
+        menuButton.classList.remove("fa-bars");
+        menuButton.classList.add("fa-xmark");
+
+    } else {
+
+        menuButton.classList.remove("fa-xmark");
+        menuButton.classList.add("fa-bars");
+
+    }
+
+}
+
+// Close mobile menu after clicking a navigation link
+
+const navLinks = document.querySelectorAll(".navbar a");
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        const navbar = document.getElementById("navbar");
+        const menuButton = document.querySelector(".menu-button i");
+
+        navbar.classList.remove("active");
+
+        menuButton.classList.remove("fa-xmark");
+        menuButton.classList.add("fa-bars");
+
+    });
+
+});

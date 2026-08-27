@@ -6,7 +6,7 @@
     <title>Benommeli Car Wash Services</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -15,8 +15,13 @@
             <img src="images/logo.jpeg" alt="Company Logo">
         </div>
         
+        <!-- MOBILE MENU BUTTON -->
+        <button class="menu-button" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
         <!-- NAVIGATION -->
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -264,6 +269,9 @@
           
 
         </main>
-    
+        <script src="script.js"></script>
+        
+        
+        
 </body>
 </html>
