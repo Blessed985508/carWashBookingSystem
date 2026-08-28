@@ -5,7 +5,11 @@ function showBookingForm(packageName) {
 
     const packageInput = document.getElementById("selected-package");
 
-    packageInput.value = packageName || "Not selected";
+    if (packageName) {
+        packageInput.value = packageName;
+    } else {
+        packageInput.value = "";
+    }
 
     modal.style.display = "flex";
 }
@@ -129,6 +133,12 @@ function sendToWhatsApp(event) {
     const packageName =
         form.elements["package"].value;
 
+        // Make sure a package is selected before sending the message
+        if(!packageName){
+        alert("Please select a package before submitting the form.");
+        return;
+        }
+
     const locationInput =
         document.getElementById("location");
 
@@ -138,8 +148,20 @@ function sendToWhatsApp(event) {
     const mapsLink =
         locationInput.dataset.mapsLink || "No GPS location provided";
 
-    const date =
-        form.elements["date"].value;
+    
+        //the date converted to a more readable format
+
+    const dateValue = form.elements["date"].value;
+
+    const dateObject = new Date(dateValue + "T00:00:00");
+
+    const date = dateObject.toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    });
+
+
 
     const time =
         form.elements["time"].value;
