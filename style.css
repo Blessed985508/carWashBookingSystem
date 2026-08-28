@@ -807,6 +807,25 @@ main {
         transform: translateY(-8px);
     }
 
+        /* VEHICLE SELECT */
+         #booking-form select {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+    
+            padding: 14px;
+    
+            font-size: 16px;
+    
+            box-sizing: border-box;
+    
+            border: 1px solid #ccc;
+    
+            border-radius: 5px;
+    
+            background-color: white;
+        }
+
 
     /* BOOKING MODAL */
     .booking-form {
@@ -835,6 +854,25 @@ main {
         box-sizing: border-box;
         min-width: 0;
     }
+
+        /* Select box Booking form */
+        #booking-form select {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+    
+            padding: 12px;
+    
+            border: 1px solid #ccc;
+    
+            border-radius: 5px;
+    
+            font-size: 15px;
+    
+            box-sizing: border-box;
+    
+            background-color: white;
+        }
 
     /*DATE AND TIME INPUT - MOBILE ONLY*/
     #booking-form input[type="date"],

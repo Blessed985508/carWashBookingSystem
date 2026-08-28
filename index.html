@@ -108,7 +108,13 @@
                 
                             <input type="tel" name="phone" placeholder="Enter your phone number" required>
                 
-                            <input type="text" name="vehicle" placeholder="Vehicle type" required>
+                            <select name="vehicle" required>
+                                <option value="" disabled selected>Select Vehicle Type</option>
+                                <option value="Sedan/Car"> Sedan / Car</option>
+                                <option value="Double Cab/SUV"> Double Cab / SUV</option>
+                                <option value="Van/Minibus"> Van / Minibus</option>
+                            </select>
+                            
                 
                             <input type="text" id="selected-package" name="package" placeholder="Selected package" readonly>
 

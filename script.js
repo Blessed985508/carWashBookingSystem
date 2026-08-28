@@ -166,8 +166,8 @@ function sendToWhatsApp(event) {
 
 
     // YOUR WHATSAPP NUMBER
-    const whatsappNumber = "27797777469";
-
+    const whatsappNumber = "27620142447";
+    
 
     const whatsappURL =
         "https://wa.me/" +
