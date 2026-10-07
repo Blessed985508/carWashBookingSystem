@@ -13,6 +13,7 @@
     <title>Benommeli Mobile Car Wash| Car Wash Services in Witbank</title>
     <link rel="icon" type="image/png" href="images/favicon.jpeg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pricing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
@@ -51,7 +52,275 @@
     </header>
 
     // ADD THE CONTENT HERE
-
+    <main>
+    
+        <!-- ================= PRICING INTRO ================= -->
+    
+        <section class="pricing-intro">
+    
+            <h1>Our Car Wash Pricing</h1>
+    
+            <p>
+                Choose the car wash package that suits your vehicle.
+                We offer affordable mobile car wash services and bring
+                the service directly to your location.
+            </p>
+    
+        </section>
+    
+    
+        <!-- ================= PRICING ================= -->
+    
+        <section class="pricing-page">
+    
+            <div class="pricing-container">
+    
+                <!-- ================= BASIC WASH ================= -->
+    
+                <div class="pricing-card">
+    
+                    <h2>Basic Wash</h2>
+    
+                    <p class="description">
+                        Dry, vacuum & windows
+                    </p>
+    
+                    <div class="price">
+                        <span>Sedan / Car</span>
+                        <strong>R100</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span>SUV & Double Cab</span>
+                        <strong>R150</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span>Van & Minibus</span>
+                        <strong>R170</strong>
+                    </div>
+    
+                    <a href="#" class="price-button" onclick="showBookingForm('Basic Wash'); return false;">
+                        Book Now
+                    </a>
+    
+                </div>
+    
+    
+                <!-- ================= SUPER WASH ================= -->
+    
+                <div class="pricing-card popular">
+    
+                    <div class="popular-badge">
+                        MOST POPULAR
+                    </div>
+    
+                    <h2>Super Wash</h2>
+    
+                    <p class="description">
+                        Basic wash & tyre shine
+                    </p>
+    
+                    <div class="price">
+                        <span>Sedan / Car</span>
+                        <strong>R130</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span>SUV & Double Cab</span>
+                        <strong>R180</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span>Van & Minibus</span>
+                        <strong>R200</strong>
+                    </div>
+    
+                    <a href="#" class="price-button" onclick="showBookingForm('Super Wash'); return false;">
+                        Book Now
+                    </a>
+    
+                </div>
+    
+    
+                <!-- ================= WASH & WAX ================= -->
+    
+                <div class="pricing-card">
+    
+                    <h2>Wash & Wax</h2>
+    
+                    <p class="description">
+                        Super wash & wax
+                    </p>
+    
+                    <div class="price">
+                        <span>Sedan / Car</span>
+                        <strong>R200</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span>SUV & Double Cab</span>
+                        <strong>R300</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span>Van & Minibus</span>
+                        <strong>R340</strong>
+                    </div>
+    
+                    <a href="#" class="price-button" onclick="showBookingForm('Wash & Wax'); return false;">
+                        Book Now
+                    </a>
+    
+                </div>
+    
+            </div>
+    
+        </section>
+    
+    
+        <!-- ================= VEHICLE INFORMATION ================= -->
+    
+        <section class="vehicle-info">
+    
+            <h2>Vehicle Categories</h2>
+    
+            <div class="vehicle-container">
+    
+                <div class="vehicle-card">
+    
+                    <i class="fa-solid fa-car"></i>
+    
+                    <h3>Sedan / Car</h3>
+    
+                    <p>
+                        Standard passenger cars and sedans.
+                    </p>
+    
+                </div>
+    
+    
+                <div class="vehicle-card">
+    
+                    <i class="fa-solid fa-truck-pickup"></i>
+    
+                    <h3>SUV & Double Cab</h3>
+    
+                    <p>
+                        SUVs, bakkies and double-cab vehicles.
+                    </p>
+    
+                </div>
+    
+    
+                <div class="vehicle-card">
+    
+                    <i class="fa-solid fa-van-shuttle"></i>
+    
+                    <h3>Van & Minibus</h3>
+    
+                    <p>
+                        Vans, minibuses and larger vehicles.
+                    </p>
+    
+                </div>
+    
+            </div>
+    
+        </section>
+    
+    
+        <!-- ================= CTA ================= -->
+    
+        <section class="pricing-cta">
+    
+            <h2>Ready to Book Your Car Wash?</h2>
+    
+            <p>
+                Choose your package and book your mobile car wash today.
+            </p>
+    
+            <a href="#" class="pricing-cta-button" onclick="showBookingForm(); return false;">
+                Book Now
+            </a>
+    
+        </section>
+    
+    
+        <!-- ================= BOOKING POPUP ================= -->
+    
+        <div id="booking-modal" class="modal">
+    
+            <div class="booking-form">
+    
+                <span class="close-button" onclick="closeBookingForm()">
+                    &times;
+                </span>
+    
+                <h2>Customer Information</h2>
+    
+                <form id="booking-form" onsubmit="sendToWhatsApp(event)">
+    
+                    <input type="text" name="name" placeholder="Enter your name" required>
+    
+                    <input type="tel" name="phone" placeholder="Enter your phone number" required>
+    
+                    <select name="vehicle" required>
+    
+                        <option value="" disabled selected>
+                            Select Vehicle Type
+                        </option>
+    
+                        <option value="Sedan/Car">
+                            Sedan / Car
+                        </option>
+    
+                        <option value="Double Cab/SUV">
+                            Double Cab / SUV
+                        </option>
+    
+                        <option value="Van/Minibus">
+                            Van / Minibus
+                        </option>
+    
+                    </select>
+    
+                    <input type="text" id="selected-package" name="package" placeholder="Selected package" readonly
+                        required>
+    
+                    <label for="location">
+                        Location
+                    </label>
+    
+                    <input type="text" id="location" name="location" placeholder="Enter your address or location" required>
+    
+                    <button type="button" onclick="getCurrentLocation()">
+                        Use My Current Location
+                    </button>
+    
+                    <p id="location-status"></p>
+    
+                    <label>
+                        Select Date
+                    </label>
+    
+                    <input type="date" name="date" required>
+    
+                    <label>
+                        Select Time
+                    </label>
+    
+                    <input type="time" name="time" required>
+    
+                    <input type="submit" value="Book Now">
+    
+                </form>
+    
+            </div>
+    
+        </div>
+    
+    </main>
 
 
 

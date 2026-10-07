@@ -1,0 +1,274 @@
+/* ================= ABOUT PAGE ================= */
+
+.about-intro {
+    padding: 80px 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-content h1 {
+    color: rgb(57, 57, 218);
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* ================= WHAT WE DO ================= */
+
+.about-services {
+    padding: 70px 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.about-services h2,
+.about-why h2,
+.mission h2,
+.vision h2 {
+    color: rgb(57, 57, 218);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    width: 300px;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+}
+
+.about-card i {
+    font-size: 40px;
+    color: rgb(57, 57, 218);
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    color: rgb(57, 57, 218);
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ================= WHY CHOOSE US ================= */
+
+.about-why {
+    padding: 70px 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.about-why-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.about-why-card {
+    width: 250px;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+}
+
+.about-why-card:hover {
+    transform: translateY(-8px);
+}
+
+.about-why-card i {
+    font-size: 38px;
+    color: rgb(57, 57, 218);
+    margin-bottom: 18px;
+}
+
+.about-why-card h3 {
+    color: rgb(57, 57, 218);
+    margin-bottom: 12px;
+}
+
+.about-why-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ================= MISSION ================= */
+
+.mission {
+    padding: 70px 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission p,
+.vision p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ================= VISION ================= */
+
+.vision {
+    padding: 70px 30px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.vision-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* ================= ABOUT CTA ================= */
+
+.about-cta {
+    padding: 70px 30px;
+    text-align: center;
+    background-color: rgb(57, 57, 218);
+    color: white;
+}
+
+.about-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: white;
+    color: rgb(57, 57, 218);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}
+
+.whatsapp-button {
+    background-color: #111;
+    color: white;
+}
+
+
+/* ================= ABOUT MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .about-intro {
+        padding: 50px 20px;
+    }
+
+    .about-content h1 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-services,
+    .about-why,
+    .mission,
+    .vision {
+        padding: 50px 20px;
+    }
+
+    .about-services h2,
+    .about-why h2,
+    .mission h2,
+    .vision h2 {
+        font-size: 28px;
+    }
+
+    .about-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about-why-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about-cta {
+        padding: 50px 20px;
+    }
+
+    .about-cta h2 {
+        font-size: 27px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}

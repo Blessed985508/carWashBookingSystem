@@ -1,0 +1,305 @@
+/* ================= PRICING PAGE ================= */
+
+.pricing-intro {
+    padding: 70px 30px 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.pricing-intro h1 {
+    color: rgb(57, 57, 218);
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.pricing-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ================= PRICING CARDS ================= */
+
+.pricing-page {
+    padding: 70px 30px;
+    background-color: white;
+}
+
+.pricing-page .pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* CARD */
+
+.pricing-page .pricing-card {
+    position: relative;
+    width: 320px;
+    padding: 35px 25px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+    border: 1px solid #eeeeee;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-page .pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* CARD TITLE */
+
+.pricing-page .pricing-card h2 {
+    color: rgb(57, 57, 218);
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.pricing-page .description {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* PRICE ROW */
+
+.pricing-page .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.pricing-page .price span {
+    color: #444;
+    font-size: 15px;
+    text-align: left;
+}
+
+.pricing-page .price strong {
+    color: rgb(57, 57, 218);
+    font-size: 21px;
+}
+
+
+/* MOST POPULAR */
+
+.pricing-page .popular {
+    border: 2px solid rgb(57, 57, 218);
+    transform: scale(1.03);
+}
+
+.pricing-page .popular:hover {
+    transform: scale(1.03) translateY(-8px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(57, 57, 218);
+    color: white;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* BOOK BUTTON */
+
+.pricing-page .price-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background-color: rgb(57, 57, 218);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pricing-page .price-button:hover {
+    background-color: rgb(40, 40, 180);
+    transform: translateY(-2px);
+}
+
+
+/* ================= VEHICLE INFORMATION ================= */
+
+.vehicle-info {
+    padding: 70px 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.vehicle-info h2 {
+    color: rgb(57, 57, 218);
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.vehicle-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.vehicle-card {
+    width: 260px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-card i {
+    font-size: 38px;
+    color: rgb(57, 57, 218);
+    margin-bottom: 18px;
+}
+
+.vehicle-card h3 {
+    color: rgb(57, 57, 218);
+    margin-bottom: 10px;
+}
+
+.vehicle-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ================= CTA ================= */
+
+.pricing-cta {
+    padding: 70px 30px;
+    text-align: center;
+    background-color: rgb(57, 57, 218);
+    color: white;
+}
+
+.pricing-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.pricing-cta p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.pricing-cta-button {
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: white;
+    color: rgb(57, 57, 218);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.pricing-cta-button:hover {
+    background-color: #eeeeee;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .pricing-page .pricing-card {
+        width: 300px;
+    }
+
+    .pricing-page .popular {
+        transform: none;
+    }
+
+    .pricing-page .popular:hover {
+        transform: translateY(-8px);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .pricing-intro {
+        padding: 50px 20px;
+    }
+
+    .pricing-intro h1 {
+        font-size: 30px;
+    }
+
+    .pricing-intro p {
+        font-size: 16px;
+    }
+
+    .pricing-page {
+        padding: 55px 20px;
+    }
+
+    .pricing-page .pricing-container {
+        gap: 40px;
+    }
+
+    .pricing-page .pricing-card {
+        width: 100%;
+        max-width: 350px;
+        padding: 35px 20px;
+    }
+
+    .pricing-page .popular {
+        transform: none;
+    }
+
+    .pricing-page .popular:hover {
+        transform: translateY(-8px);
+    }
+
+    .vehicle-info {
+        padding: 55px 20px;
+    }
+
+    .vehicle-info h2 {
+        font-size: 28px;
+    }
+
+    .vehicle-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .pricing-cta {
+        padding: 55px 20px;
+    }
+
+    .pricing-cta h2 {
+        font-size: 27px;
+    }
+
+    .pricing-cta p {
+        font-size: 16px;
+    }
+
+}
