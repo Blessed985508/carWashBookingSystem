@@ -20,7 +20,7 @@
     background:
         linear-gradient(rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.55)),
-        url("images/blackGuyWashing.jpg");
+        url("images/serviceExteriorWash.jpeg");
 
     background-size: cover;
 
@@ -213,7 +213,7 @@
 
     border-radius: 50%;
 
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
 
     font-size: 24px;
 
@@ -224,7 +224,7 @@
 
 .service-content h2 {
 
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
 
     font-size: 24px;
 
@@ -294,8 +294,7 @@
 
 .featured-service {
 
-    border: 2px solid rgb(57, 57, 218);
-
+    border: 2px solid rgb(1, 1, 101);
 }
 
 
@@ -324,7 +323,7 @@
 
 .service-process h2 {
 
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
 
     font-size: 32px;
 
@@ -369,7 +368,7 @@
 
     font-size: 35px;
 
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
 
     margin-bottom: 15px;
 
@@ -411,7 +410,7 @@
 
     margin: 0 auto 15px;
 
-    background-color: rgb(57, 57, 218);
+    background-color: rgb(1, 1, 101);
 
     color: white;
 

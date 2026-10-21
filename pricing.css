@@ -7,7 +7,7 @@
 }
 
 .pricing-intro h1 {
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     font-size: 38px;
     margin-bottom: 15px;
 }
@@ -60,7 +60,7 @@
 /* CARD TITLE */
 
 .pricing-page .pricing-card h2 {
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     font-size: 27px;
     margin-bottom: 12px;
 }
@@ -92,7 +92,7 @@
 }
 
 .pricing-page .price strong {
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     font-size: 21px;
 }
 
@@ -100,7 +100,7 @@
 /* MOST POPULAR */
 
 .pricing-page .popular {
-    border: 2px solid rgb(57, 57, 218);
+    border: 2px solid rgb(1, 1, 101);
     transform: scale(1.03);
 }
 
@@ -113,7 +113,7 @@
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(57, 57, 218);
+    background-color: rgb(1, 1, 101);
     color: white;
     padding: 7px 18px;
     border-radius: 20px;
@@ -129,7 +129,7 @@
     display: inline-block;
     margin-top: 25px;
     padding: 13px 28px;
-    background-color: rgb(57, 57, 218);
+    background-color: rgb(1, 1, 101);
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -152,7 +152,7 @@
 }
 
 .vehicle-info h2 {
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     font-size: 32px;
     margin-bottom: 40px;
 }
@@ -174,12 +174,12 @@
 
 .vehicle-card i {
     font-size: 38px;
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     margin-bottom: 18px;
 }
 
 .vehicle-card h3 {
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     margin-bottom: 10px;
 }
 
@@ -194,7 +194,7 @@
 .pricing-cta {
     padding: 70px 30px;
     text-align: center;
-    background-color: rgb(57, 57, 218);
+    background-color: rgb(1, 1, 101);
     color: white;
 }
 
@@ -212,7 +212,7 @@
     display: inline-block;
     padding: 13px 30px;
     background-color: white;
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;

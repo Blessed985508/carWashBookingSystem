@@ -12,7 +12,7 @@
 }
 
 .about-content h1 {
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     font-size: 38px;
     margin-bottom: 25px;
 }
@@ -37,7 +37,7 @@
 .about-why h2,
 .mission h2,
 .vision h2 {
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     font-size: 32px;
     margin-bottom: 15px;
 }
@@ -71,12 +71,12 @@
 
 .about-card i {
     font-size: 40px;
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     margin-bottom: 20px;
 }
 
 .about-card h3 {
-    color: rgb(57, 57, 218);
+    color: rgb(1, 1, 101);
     margin-bottom: 12px;
 }
 
@@ -117,12 +117,12 @@
 
 .about-why-card i {
     font-size: 38px;
-    color: rgb(57, 57, 218);
+    color: rgb(0, 74, 128);
     margin-bottom: 18px;
 }
 
 .about-why-card h3 {
-    color: rgb(57, 57, 218);
+    color: rgb(0, 74, 128);
     margin-bottom: 12px;
 }
 
