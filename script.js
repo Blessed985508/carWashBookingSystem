@@ -3,15 +3,20 @@ function showBookingForm(packageName) {
 
     const modal = document.getElementById("booking-modal");
 
-    const packageInput = document.getElementById("selected-package");
-
-    if (packageName) {
-        packageInput.value = packageName;
-    } else {
-        packageInput.value = "";
-    }
+    const packageSelect = document.getElementById("package-select");
+    
+    //Open the Form with the selected package pre-selected
 
     modal.style.display = "flex";
+
+    //selecy the package if the customer clicked a pricing card
+    if (packageName) {
+        packageSelect.value = packageName;
+    } else {
+        packageSelect.value = "";
+    }
+
+    
 }
 
 
@@ -122,16 +127,19 @@ function sendToWhatsApp(event) {
     const form = document.getElementById("booking-form");
 
     const name =
-        form.elements["name"].value;
+        form.elements["name"].value.trim();
 
     const phone =
-        form.elements["phone"].value;
+        form.elements["phone"].value.trim();
 
     const vehicle =
         form.elements["vehicle"].value;
 
     const packageName =
         form.elements["package"].value;
+
+    const quantity =
+        form.elements["quantity"].value;
 
         // Make sure a package is selected before sending the message
         if(!packageName){
@@ -168,21 +176,23 @@ function sendToWhatsApp(event) {
 
 
     const message =
-        " *NEW CAR WASH BOOKING*%0A%0A" +
+        " *NEW CAR WASH BOOKING*\n\n" +
 
-        " *Name:* " + name + "%0A" +
+        " *Name:* " + name + "\n" +
 
-        " *Phone:* " + phone + "%0A" +
+        " *Phone:* " + phone + "\n" +
 
-        " *Vehicle:* " + vehicle + "%0A" +
+        " *Vehicle:* " + vehicle + "\n  " +
 
-        " *Package:* " + packageName + "%0A" +
+        " *Package:* " + packageName + "\n" +
 
-        " *Location:* " + location + "%0A" +
+        " *Quantity:* " + quantity + "\n" +
 
-        " *Google Maps:* " + mapsLink + "%0A" +
+        " *Location:* " + location + "\n" +
 
-        " *Date:* " + date + "%0A" +
+        " *Google Maps:* " + mapsLink + "\n" +
+
+        " *Date:* " + date + "\n" +
 
         " *Time:* " + time;
 

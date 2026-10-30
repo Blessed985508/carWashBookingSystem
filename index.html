@@ -2,22 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Mobile car wash services in Witbank, South Africa. We provide professional car wash services at your doorstep, including exterior and interior cleaning, waxing, and detailing. Book your car wash today!">
+    <meta name="description" content="Mobile car wash services in Witbank. We come to your home, Basic wash from R100. Book on WhatsApp today.">
     <meta name="author" content="Phumelela Mafagane" >
     <meta name="keywords" content="Mobile Car Wash, Car Wash Services, Witbank, South Africa, Exterior Car Wash, Interior Car Wash, Full-Service Car Wash, Professional Car Wash, Convenient Car Wash, Vehicle Cleaning, Auto Detailing">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Benommeli Mobile Car Wash| Car Wash Services in Witbank</title>
+    <title>Mobile Car Wash in Witbank | Benommeli – From R100</title>
     <link rel="icon" type="image/png" href="images/favicon.jpeg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoWash",
+      "name": "Benommeli Mobile Car Wash",
+      "telephone": "+27620142447",
+      "areaServed": "Witbank, Mpumalanga",
+      "openingHours": "Mo-Sa 08:00-17:00",
+      "priceRange": "R100–R340",
+      "url": "https://benommelicarwash.netlify.app/#"
+    }
+    </script>
+
+
 </head>
 <body>
     <header>
         <!-- LOGO -->
         <div class="logo">
-            <img src="images/logo.png" alt="Company Logo">
+            <img src="images/logo.png" alt="Benommeli Mobile Car Wash logo">
         </div>
         
         <!-- MOBILE MENU BUTTON -->
@@ -38,7 +52,7 @@
 
         <!-- BOOKING + PHONE NUMBER -->
         <div class="header-right">
-            <a href="#pricing" class="booking-button" onclick="showBookingForm()">Book Now</a>
+            <a href="pricing.html" class="booking-button" onclick="showBookingForm()">Book Now</a>
         
             <a href="tel:0620142447" class="phone">
                 062 014 2447
@@ -55,7 +69,7 @@
             
                 <div class="hero-overlay"></div>
             
-                <h1>MOBILE CAR WASH SERVICES</h1>
+                <h1>MOBILE CAR WASH SERVICES in Witbank</h1>
             
                 <p>
                     We provide professional car wash services at your doorstep.
@@ -109,9 +123,17 @@
                                 <option value="Van/Minibus"> Van / Minibus</option>
                             </select>
                             
+                            <select name="package" id="package-select" onchange="updateSelectedPackage()" required>
+                                <option value="" disabled selected>Select Wash Package</option>
+                                <option value="Basic Wash">Basic Wash</option>
+                                <option value="Super Wash">Super Wash</option>
+                                <option value="Wash & Wax">Wash & Wax</option>
+                            </select>
+
+                            
                 
-                            <input type="text" id="selected-package" name="package" placeholder="Selected package" readonly required>
-                            <input type="number" id="quantity" name="quantity" placeholder="Enter car quantity" range>
+                            
+                            <input type="number" id="quantity" name="quantity" placeholder="Enter number of vehicles" min="0" max="20" value="1" required>
 
                             <label for="location">Location</label>
                         
